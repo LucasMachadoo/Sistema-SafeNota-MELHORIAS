@@ -34,7 +34,7 @@ https://safenota.netlify.app/
 
 - Usar o 1 acesso guiado , atraves da biblioteca  anno.js ou outras em angular.
 ex:
-![App Screenshot](https://lh3.googleusercontent.com/wNsgbxzR1C4pjgDBwfe27Rnzih_XmZEqJgGLp0aOmCF8-KbQzTlbYLngJvp1J9bqYMleUDHs8FLG8jx3_Us_aoKzpXgbnZZOSlngLJwJum-TkTNUiEmpG4zd-VVl629rrO93e7lkN48)
+![App Screenshot](https://media.web.userguiding.com/uploads/2021/01/22063335/vieworks-success-story-1.gif)
 
 Sendo assim poderíamos focar em dar auxilio para erros do emissor e o primeiro acessoe duvidas ficaria com próprio sistema e assim acabaria com o "treinamento do enota" e poderíamos escalar a ferramenta.
 
