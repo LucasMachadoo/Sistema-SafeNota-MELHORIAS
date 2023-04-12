@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body{
+    background: #fff;
+}
+main{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.login{
+  width: 450px;
+  height: min-content;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 9px );
+  -webkit-backdrop-filter: blur( 9px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  font-family: 'Inter', sans-serif;
+  color: black;
+}
+.login img {
+  width: 20rem;
+  margin: 0  2rem  ;
+  
+}
+.login h1{
+  font-size: 15px;
+  display: grid;
+  place-items: center;
+}
+.login form{
+  font-size: 20px; 
+}
+.login form .form-group{
+  margin-bottom: 12px;
+}
+.login form input[type="submit"] {
+font-size:20px;
+margin-top: 15px;
+}
+.login form a{
+  text-decoration: none;
+  font-size: 15px;
+  color: rgb(32, 110, 179);
+}
+.shape1{
+  position: absolute;
+  width: 132px;
+  height: 132px;
+  left: 39rem;
+  
+  top: 7%;
+  border-radius: 25px;
+  transform: rotate(-36.07deg);
+  background: #1a5eeb;
+  transform: rotate(-45.16deg);
+
+
+}
+
+.shape2{
+position: absolute;
+width: 132px;
+height: 132px;
+left: 67rem;
+top: 80%;
+border-radius: 25px;
+
+background: #1a5eeb;
+transform: rotate(-51.07deg);
+}
+
+.cnpj-size,senha-size{
+  font-size: 17px;
+}
+input {
+  border-radius: 0;
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.lnr-eye {
+  position: absolute;
+  top: 360px;
+  right: 30px;
+  cursor: pointer;
+}
+.esqueci-01:hover{
+  text-decoration: underline;
+  color: #c54914;
+}
+.icons-size>i{
+  size: 22px;
+}
+
+
+.shape1:hover{s
+    
+    border: 1px solid #fff;
+}
+.shape2:hover{
+      border: 1px solid #fff;
+}
+.cor-botao-01:hover{
+  background-color: #28a745;
+  color: #fff;
+  border-color: #28a745;
+}
+
+
+/* If the screen size is 600px wide or less, hide the element */
+/*shape1*/
+@media screen and (max-width: 600px) {
+  .shape1  {
+    display: none;
+  }
+  .login{
+    width: 350px;
+    height: rem;
+    padding: 2px;
+  }
+
+}
+@media screen and (max-width: 768px) {
+  .shape1 {
+    display: none;
+  }
+  
+}
+@media screen and (max-width: 992px) {
+  .shape1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .shape1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .shape1 {
+    display: none;
+  }
+}
+/*shape2*/
+
+@media screen and (max-width: 600px) {
+  .shape2  {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .shape2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .shape2 {
+    display: none;
+  }
+  main{
+    width: 
+  }
+}
+@media screen and (max-width: 1280px) {
+  .shape2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .shape2 {
+    display: none;
+  }
+}

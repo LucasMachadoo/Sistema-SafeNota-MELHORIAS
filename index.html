@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SafeNota TESTE | NF-E</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
+    <!-- icons -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <!--css-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="">
+      <nav
+        class="navbar navbar-expand-lg navbar-dark navbar-01"
+        aria-label="Eighth navbar example"
+      >
+        <div class="container">
+          <img
+            src="assets/img/logo-safenota-2-removebg-preview 1.svg"
+            alt=""
+            class="mx-5"
+            style="width: 10rem"
+          />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample07"
+            aria-controls="navbarsExample07"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarsExample07">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Início</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Cadastros</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-dot"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+                        /></svg
+                      >Emitente</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-dot"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+                        /></svg
+                      >Clientes</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-dot"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+                        /></svg
+                      >Fornecedores</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-dot"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+                        /></svg
+                      >Transportadoras</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-dot"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+                        /></svg
+                      >Vendedores</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-dot"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+                        /></svg
+                      >Produtos</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Nota Fiscal</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-dot"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+                        /></svg
+                      >Emitir Nova NF-e</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-dot"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+                        /></svg
+                      >Gerenciar NF-e</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Relatórios</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-dot"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+                        /></svg
+                      >NF-e por Data de Emissão</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-dot"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+                        /></svg
+                      >Vendas por Data de Emissão</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-dot"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+                        /></svg
+                      >Listas</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-dot"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+                        /></svg
+                      >Curva ABC</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-dot"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+                        /></svg
+                      >SPED</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Cobranças</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-dot"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+                        /></svg
+                      >Dados Bancários</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-dot"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+                        /></svg
+                      >Conta Corrente</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-dot"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+                        /></svg
+                      >Consultar transações</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Inutilização NF-E</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-dot"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+                        /></svg
+                      >Inutilizar Numeração</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-dot"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+                        /></svg
+                      >Gerenciar Inutilização</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div>
+              <a href="" class="btn btn-outline-light">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-gear"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"
+                  />
+                  <path
+                    d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"
+                  />
+                </svg>
+              </a>
+
+              <a href="/login.html" class="btn btn-outline-light ">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-counterclockwise"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z"
+                  />
+                  <path
+                    d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z"
+                  />
+                </svg>
+                Voltar para o Portal</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="shape-01"></div>
+    </header>
+    <main class="main-01 py-3 px-5">
+      <div class="aba-01 d-flex justify-content-around align-items-center mt-3">
+        <h4>
+          <svg
+            style="color: #fd7e14"
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-building-fill-check"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514Z"
+            />
+            <path
+              d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7.256A4.493 4.493 0 0 0 12.5 8a4.493 4.493 0 0 0-3.59 1.787A.498.498 0 0 0 9 9.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .39-.187A4.476 4.476 0 0 0 8.027 12H6.5a.5.5 0 0 0-.5.5V16H3a1 1 0 0 1-1-1V1Zm2 1.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5Zm3 0v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1ZM4 5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5ZM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5ZM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z"
+            />
+          </svg>
+          <div class="vr"></div>
+          Gerenciamento das cobrança
+        </h4>
+
+        <li class="nav-item dropdown mx-5">
+          <h4>
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              ><svg
+                style="color: #fd7e14"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-person-check"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514ZM11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"
+                />
+                <path
+                  d="M8.256 14a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1h5.256Z"
+                />
+              </svg>
+              <div class="vr"></div>
+              <strong> Usuário:</strong> Lucas Goncalves machado</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-pencil"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"
+                    />
+                  </svg>
+                  Editar Perfil</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-person-vcard"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5ZM9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8Zm1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5Z"
+                    />
+                    <path
+                      d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2ZM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96c.026-.163.04-.33.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1.006 1.006 0 0 1 1 12V4Z"
+                    />
+                  </svg>
+                  Meu certificado</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-return-left"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z"
+                    />
+                  </svg>
+                  Sair</a
+                >
+              </li>
+            </ul>
+          </h4>
+        </li>
+        <h4>
+          <svg
+            style="color: #fd7e14"
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-shop"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z"
+            />
+          </svg>
+          <div class="vr"></div>
+          <strong>Emitente:</strong> Treinamento Safeweb
+        </h4>
+      </div>
+
+      <section class="d-flex justify-content-between align-items-center"  style="height: max-content;"">
+        <div class="py-4">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Página Inicial</a></li>
+              <li class="breadcrumb-item"><a href="#">Notas Fiscais </a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Nova Nota Fiscal
+              </li>
+            </ol>
+          </nav>
+        </div>
+
+        <div class=" d-flex  ">
+            <h4 class="mx-2" style="font-size: 25;"><strong>Status:</strong> </h4>
+            <span class="badge rounded-pill text-bg-secondary">DIGITAÇÃO</span>
+        </div>
+        <div class=" d-flex  ">
+          <h4 class="mx-2"> <strong>Série</strong>  2 </h4>
+          <div class="vr"></div>
+          <h4> <strong>  Número</strong> 
+            100007 </h4>
+          
+      </div>
+      
+      </section>
+
+      <section class="">
+          <ul class="nav nav-pills mb-4 " id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active " id="pills-home-dados" data-bs-toggle="pill" data-bs-target="#pills-dados" type="button" role="tab" aria-controls="pills-dados" aria-selected="true">Dados da NF-e</button>
+            </li>
+            
+            <li class="nav-item" role="presentation">
+              <button class="nav-link disabled" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-emitente" type="button" role="tab" aria-controls="pills-emitente" aria-selected="false">Emitente</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link disabled" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-produtos" type="button" role="tab" aria-controls="pills-produtos" aria-selected="false">Produtos</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link disabled" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-totais" type="button" role="tab" aria-controls="pills-totais" aria-selected="false">Totais</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link disabled" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-pagamento" type="button" role="tab" aria-controls="pills-pagamento" aria-selected="false">Pagamento</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link disabled" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-trasnporte" type="button" role="tab" aria-controls="pills-trasnporte" aria-selected="false">Transporte</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link disabled" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-entrega" type="button" role="tab" aria-controls="pills-entrega" aria-selected="false">Entrega/Retirada</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link disabled" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-cobranca" type="button" role="tab" aria-controls="pills-cobranca" aria-selected="false">Cobrança</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link disabled" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-info" type="button" role="tab" aria-controls="pills-info" aria-selected="false">Inf. Adicionais</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link disabled" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-compra" type="button" role="tab" aria-controls="pills-compra" aria-selected="false">Compra</button>
+            </li>
+            
+          </ul>
+          
+          <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>ATENÇÃO!</strong> Você precisa preencher TODOS os campos da aba<strong> Dados da NF-e</strong> para prosseguir a nota!
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+
+          <div class="tab-content main-nota tabs-dados" id="pills-tabContent">
+                <div class="tab-pane  fade show active mx-4 py-5" id="pills-dados" role="tabpanel" aria-labelledby="pills-dados" tabindex="0">
+                      <nav>
+                      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-nfe" type="button" role="tab" aria-controls="nav-nav-nfe" aria-selected="true">NF-e</button>
+                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-Notas-Fiscais" type="button" role="tab" aria-controls="nav-Notas-Fiscais" aria-selected="false">Notas Fiscais Referenciadas</button>
+                        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-Autorização" type="button" role="tab" aria-controls="nav-Autorização" aria-selected="false">Autorização de Download</button>
+                        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-Dados" type="button" role="tab" aria-controls="nav-Dados" aria-selected="false">Dados de Protocolo</button>
+
+                      </div>
+                    </nav>
+
+                    <div class="tab-content pt-3  icons-size" id="nav-tabContent">
+                      <div class="tab-pane fade show active " id="nav-nfe" role="tabpanel" aria-labelledby="nav-nfe" tabindex="0">
+                        <form class="row g-3 ">
+                          <div class="col-md-6">
+                            <label for="" class="form-label " ><span style="color: red;">*</span> Série  <i class="bi bi-question-circle" data-bs-toggle="modal" data-bs-target="#exampleModal"></i></label>
+                            <input class="form-control" type="text" placeholder="2" aria-label="Disabled input example" disabled>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="" class="form-label"><span style="color: red;">*</span> Número <i class="bi bi-question-circle" data-bs-toggle="modal" data-bs-target="#exampleModal"></i></label>
+                            <input class="form-control" type="text" placeholder="100008" aria-label="Disabled input example" disabled>
+                          </div>
+                          <div class="col-6">
+                            <label for="" class="form-label"><span style="color: red;">*</span>  Data e Hora da Emissão <i class="bi bi-question-circle" data-bs-toggle="modal" data-bs-target="#exampleModal"></i></label>
+                            <input id="startDate" class="form-control" type="date" required/>
+                          </div>
+                          <div class="col-6">
+                            <label for="inputAddress2" class="form-label">Data e Hora de Saída <i class="bi bi-question-circle" data-bs-toggle="modal" data-bs-target="#exampleModal"></i></label>
+                            <input id="startDate" class="form-control" type="date" required />
+                          </div>
+                          
+                          <div class="col-md-">
+                            <label for="" class="form-label"><span style="color: red;">*</span>  Natureza da Operação <i class="bi bi-question-circle" data-bs-toggle="modal" data-bs-target="#exampleModal"></i></label>
+                            <select id="inputState" class="form-select">
+                              <option selected disabled>venda</option>
+                              <option selected >Venda</option>
+                              <option value="Compra">Compra</option>
+                              <option value="Transferência">Transferência</option>
+                              <option value="Devolução">Devolução</option>
+                              <option value="Importação">Importação</option>
+                              <option value="Consignação">Consignação</option>
+                              <option value="Remessa de Demonstração">Remessa de Demonstração</option>
+                              <option value="Remessa de Industrialização">Remessa de Industrialização</option>
+                              <option value="Remessa de Outra Natureza">Remessa de Outra Natureza</option>
+                              <option value="Remessa para Armazenagem">Remessa para Armazenagem</option>
+                              <option value="Remessa de Doação">Remessa de Doação</option>
+                              <option value="Industrialização por Encomenda">Industrialização por Encomenda</option>
+                            </select>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="" class="form-label"><span style="color: red;">*</span>   Finalidade da Emissão <i class="bi bi-question-circle" data-bs-toggle="modal" data-bs-target="#exampleModal"></i></label>
+                            <select id="inputState" class="form-select">
+                              <option selected>NF-e normal</option>
+                                <option >NF-e complementar</option>
+                                <option >NF-e de ajuste</option>
+                                <option >Devolução de Mercadoria</option>
+                            </select>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="" class="form-label"><span style="color: red;">*</span>  Forma de Emissão <i class="bi bi-question-circle" data-bs-toggle="modal" data-bs-target="#exampleModal"></i></label>
+                            <select id="inputState" class="form-select">
+                              <option selected>Normal</option>
+                                <option >Contingência SVC-AN</option>
+                                <option >Contingência SVC-RS</option>
+                            </select>
+                          </div>
+                          
+                        <!-- body  modal ta no   no <i class="bi bi-question-circle"modal -->
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">oque seria uma serie de uma nota fiscal NF-E</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                A série da NFe é um número sequencial que define a numeração da nota, e no caso de empresas que utilizam mais de uma série facilita a identificação do grupo de notas a que pertence tal série.
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div><!-- end Modal -->
+
+
+                          <div class="col-md-6">
+                            <label for="" class="form-label"><span style="color: red;">*</span>  UF de Ocorrência  <i class="bi bi-question-circle" data-bs-toggle="modal" data-bs-target="#exampleModal"></i></label>
+                            <select id="inputState" class="form-select" required>
+                              <option label="AL" value="string:27">AL</option>     
+                              <option label="AM" value="string:13">AM</option>
+                              <option label="AP" value="string:16">AP</option>
+                              <option label="BA" value="string:29">BA</option>
+                              <option label="CE" value="string:23">CE</option>
+                              <option label="DF" value="string:53">DF</option>
+                              <option label="ES" value="string:32">ES</option>
+                              <option label="GO" value="string:52">GO</option>
+                              <option value="string:21">MA</option>
+                              <option label="MG" value="string:31">MG</option>
+                              <option label="MS" value="string:50">MS</option>
+                              <option label="MT" value="string:51">MT</option>
+                              <option label="PA" value="string:15">PA</option>
+                              <option label="PB" value="string:25">PB</option>
+                              <option label="PE" value="string:26">PE</option>
+                              <option label="PI" value="string:22">PI</option>
+                              <option label="PR" value="string:41">PR</option>
+                              <option >RS</option>
+                              <option label="RJ" value="string:33">RJ</option>
+                              <option label="RN" value="string:24">RN</option>
+                              <option label="RO" value="string:11">RO</option>
+                              <option label="RR" value="string:14">RR</option>
+                              <option label="SC" value="string:42">SC</option>
+                              <option label="SE" value="string:28">SE</option>
+                              <option label="SP" value="string:35">SP</option>
+                              <option label="TO" value="string:17">TO</option>
+                            </select>
+                          </div>
+                          <div class="col-md-6">
+                            
+                            <label for="" class="form-label"><span style="color: red;">*</span>  Município de Ocorrência <i class="bi bi-question-circle" data-bs-toggle="modal" data-bs-target="#exampleModal"></i> </label>
+                            <select id="DadosNFeMunicipioOcorrencia" class="form-control uf ng-pristine ng-not-empty ng-valid ng-valid-required ng-touched" ng-options="option.CodigoSefaz as option.Nome for option in Dados.Municipio" ng-model="NFeSW.NFe.infNFe.ide.cMunFG" required="required" style=""><option label="ACEGUÁ" value="string:4300034">ACEGUÁ</option><option label="ÁGUA SANTA" value="string:4300059">ÁGUA SANTA</option><option label="AGUDO" value="string:4300109">AGUDO</option><option label="AJURICABA" value="string:4300208">AJURICABA</option><option label="ALECRIM" value="string:4300307">ALECRIM</option><option label="ALEGRETE" value="string:4300406">ALEGRETE</option><option label="ALEGRIA" value="string:4300455">ALEGRIA</option><option label="ALMIRANTE TAMANDARÉ DO SUL" value="string:4300471">ALMIRANTE TAMANDARÉ DO SUL</option><option label="ALPESTRE" value="string:4300505">ALPESTRE</option><option label="ALTO ALEGRE" value="string:4300554">ALTO ALEGRE</option><option label="ALTO FELIZ" value="string:4300570">ALTO FELIZ</option><option label="ALVORADA" value="string:4300604">ALVORADA</option><option label="AMARAL FERRADOR" value="string:4300638">AMARAL FERRADOR</option><option label="AMETISTA DO SUL" value="string:4300646">AMETISTA DO SUL</option><option label="ANDRÉ DA ROCHA" value="string:4300661">ANDRÉ DA ROCHA</option><option label="ANTA GORDA" value="string:4300703">ANTA GORDA</option><option label="ANTÔNIO PRADO" value="string:4300802">ANTÔNIO PRADO</option><option label="ARAMBARÉ" value="string:4300851">ARAMBARÉ</option><option label="ARARICÁ" value="string:4300877">ARARICÁ</option><option label="ARATIBA" value="string:4300901">ARATIBA</option><option label="ARROIO DO MEIO" value="string:4301008">ARROIO DO MEIO</option><option label="ARROIO DO SAL" value="string:4301057">ARROIO DO SAL</option><option label="ARROIO DO PADRE" value="string:4301073">ARROIO DO PADRE</option><option label="ARROIO DOS RATOS" value="string:4301107">ARROIO DOS RATOS</option><option label="ARROIO DO TIGRE" value="string:4301206">ARROIO DO TIGRE</option><option label="ARROIO GRANDE" value="string:4301305">ARROIO GRANDE</option><option label="ARVOREZINHA" value="string:4301404">ARVOREZINHA</option><option label="AUGUSTO PESTANA" value="string:4301503">AUGUSTO PESTANA</option><option label="ÁUREA" value="string:4301552">ÁUREA</option><option label="BAGÉ" value="string:4301602">BAGÉ</option><option label="BALNEÁRIO PINHAL" value="string:4301636">BALNEÁRIO PINHAL</option><option label="BARÃO" value="string:4301651">BARÃO</option><option label="BARÃO DE COTEGIPE" value="string:4301701">BARÃO DE COTEGIPE</option><option label="BARÃO DO TRIUNFO" value="string:4301750">BARÃO DO TRIUNFO</option><option label="BARRACÃO" value="string:4301800">BARRACÃO</option><option label="BARRA DO GUARITA" value="string:4301859">BARRA DO GUARITA</option><option label="BARRA DO QUARAÍ" value="string:4301875">BARRA DO QUARAÍ</option><option label="BARRA DO RIBEIRO" value="string:4301909">BARRA DO RIBEIRO</option><option label="BARRA DO RIO AZUL" value="string:4301925">BARRA DO RIO AZUL</option><option label="BARRA FUNDA" value="string:4301958">BARRA FUNDA</option><option label="BARROS CASSAL" value="string:4302006">BARROS CASSAL</option><option label="BENJAMIN CONSTANT DO SUL" value="string:4302055">BENJAMIN CONSTANT DO SUL</option><option label="BENTO GONÇALVES" value="string:4302105">BENTO GONÇALVES</option><option label="BOA VISTA DAS MISSÕES" value="string:4302154">BOA VISTA DAS MISSÕES</option><option label="BOA VISTA DO BURICÁ" value="string:4302204">BOA VISTA DO BURICÁ</option><option label="BOA VISTA DO CADEADO" value="string:4302220">BOA VISTA DO CADEADO</option><option label="BOA VISTA DO INCRA" value="string:4302238">BOA VISTA DO INCRA</option><option label="BOA VISTA DO SUL" value="string:4302253">BOA VISTA DO SUL</option><option label="BOM JESUS" value="string:4302303">BOM JESUS</option><option label="BOM PRINCÍPIO" value="string:4302352">BOM PRINCÍPIO</option><option label="BOM PROGRESSO" value="string:4302378">BOM PROGRESSO</option><option label="BOM RETIRO DO SUL" value="string:4302402">BOM RETIRO DO SUL</option><option label="BOQUEIRÃO DO LEÃO" value="string:4302451">BOQUEIRÃO DO LEÃO</option><option label="BOSSOROCA" value="string:4302501">BOSSOROCA</option><option label="BOZANO" value="string:4302584">BOZANO</option><option label="BRAGA" value="string:4302600">BRAGA</option><option label="BROCHIER" value="string:4302659">BROCHIER</option><option label="BUTIÁ" value="string:4302709">BUTIÁ</option><option label="CAÇAPAVA DO SUL" value="string:4302808">CAÇAPAVA DO SUL</option><option label="CACEQUI" value="string:4302907">CACEQUI</option><option label="CACHOEIRA DO SUL" value="string:4303004">CACHOEIRA DO SUL</option><option label="CACHOEIRINHA" value="string:4303103">CACHOEIRINHA</option><option label="CACIQUE DOBLE" value="string:4303202">CACIQUE DOBLE</option><option label="CAIBATÉ" value="string:4303301">CAIBATÉ</option><option label="CAIÇARA" value="string:4303400">CAIÇARA</option><option label="CAMAQUÃ" value="string:4303509">CAMAQUÃ</option><option label="CAMARGO" value="string:4303558">CAMARGO</option><option label="CAMBARÁ DO SUL" value="string:4303608">CAMBARÁ DO SUL</option><option label="CAMPESTRE DA SERRA" value="string:4303673">CAMPESTRE DA SERRA</option><option label="CAMPINA DAS MISSÕES" value="string:4303707">CAMPINA DAS MISSÕES</option><option label="CAMPINAS DO SUL" value="string:4303806">CAMPINAS DO SUL</option><option label="CAMPO BOM" value="string:4303905">CAMPO BOM</option><option label="CAMPO NOVO" value="string:4304002">CAMPO NOVO</option><option label="CAMPOS BORGES" value="string:4304101">CAMPOS BORGES</option><option label="CANDELÁRIA" value="string:4304200">CANDELÁRIA</option><option label="CÂNDIDO GODÓI" value="string:4304309">CÂNDIDO GODÓI</option><option label="CANDIOTA" value="string:4304358">CANDIOTA</option><option label="CANELA" value="string:4304408">CANELA</option><option label="CANGUÇU" value="string:4304507">CANGUÇU</option><option label="CANOAS" value="string:4304606">CANOAS</option><option label="CANUDOS DO VALE" value="string:4304614">CANUDOS DO VALE</option><option label="CAPÃO BONITO DO SUL" value="string:4304622">CAPÃO BONITO DO SUL</option><option label="CAPÃO DA CANOA" value="string:4304630">CAPÃO DA CANOA</option><option label="CAPÃO DO CIPÓ" value="string:4304655">CAPÃO DO CIPÓ</option><option label="CAPÃO DO LEÃO" value="string:4304663">CAPÃO DO LEÃO</option><option label="CAPIVARI DO SUL" value="string:4304671">CAPIVARI DO SUL</option><option label="CAPELA DE SANTANA" value="string:4304689">CAPELA DE SANTANA</option><option label="CAPITÃO" value="string:4304697">CAPITÃO</option><option label="CARAZINHO" value="string:4304705">CARAZINHO</option><option label="CARAÁ" value="string:4304713">CARAÁ</option><option label="CARLOS BARBOSA" value="string:4304804">CARLOS BARBOSA</option><option label="CARLOS GOMES" value="string:4304853">CARLOS GOMES</option><option label="CASCA" value="string:4304903">CASCA</option><option label="CASEIROS" value="string:4304952">CASEIROS</option><option label="CATUÍPE" value="string:4305009">CATUÍPE</option><option label="CAXIAS DO SUL" value="string:4305108">CAXIAS DO SUL</option><option label="CENTENÁRIO" value="string:4305116">CENTENÁRIO</option><option label="CERRITO" value="string:4305124">CERRITO</option><option label="CERRO BRANCO" value="string:4305132">CERRO BRANCO</option><option label="CERRO GRANDE" value="string:4305157">CERRO GRANDE</option><option label="CERRO GRANDE DO SUL" value="string:4305173">CERRO GRANDE DO SUL</option><option label="CERRO LARGO" value="string:4305207">CERRO LARGO</option><option label="CHAPADA" value="string:4305306">CHAPADA</option><option label="CHARQUEADAS" value="string:4305355">CHARQUEADAS</option><option label="CHARRUA" value="string:4305371">CHARRUA</option><option label="CHIAPETTA" value="string:4305405">CHIAPETTA</option><option label="CHUÍ" value="string:4305439">CHUÍ</option><option label="CHUVISCA" value="string:4305447">CHUVISCA</option><option label="CIDREIRA" value="string:4305454">CIDREIRA</option><option label="CIRÍACO" value="string:4305504">CIRÍACO</option><option label="COLINAS" value="string:4305587">COLINAS</option><option label="COLORADO" value="string:4305603">COLORADO</option><option label="CONDOR" value="string:4305702">CONDOR</option><option label="CONSTANTINA" value="string:4305801">CONSTANTINA</option><option label="COQUEIRO BAIXO" value="string:4305835">COQUEIRO BAIXO</option><option label="COQUEIROS DO SUL" value="string:4305850">COQUEIROS DO SUL</option><option label="CORONEL BARROS" value="string:4305871">CORONEL BARROS</option><option label="CORONEL BICACO" value="string:4305900">CORONEL BICACO</option><option label="CORONEL PILAR" value="string:4305934">CORONEL PILAR</option><option label="COTIPORÃ" value="string:4305959">COTIPORÃ</option><option label="COXILHA" value="string:4305975">COXILHA</option><option label="CRISSIUMAL" value="string:4306007">CRISSIUMAL</option><option label="CRISTAL" value="string:4306056">CRISTAL</option><option label="CRISTAL DO SUL" value="string:4306072">CRISTAL DO SUL</option><option label="CRUZ ALTA" value="string:4306106">CRUZ ALTA</option><option label="CRUZALTENSE" value="string:4306130">CRUZALTENSE</option><option label="CRUZEIRO DO SUL" value="string:4306205">CRUZEIRO DO SUL</option><option label="DAVID CANABARRO" value="string:4306304">DAVID CANABARRO</option><option label="DERRUBADAS" value="string:4306320">DERRUBADAS</option><option label="DEZESSEIS DE NOVEMBRO" value="string:4306353">DEZESSEIS DE NOVEMBRO</option><option label="DILERMANDO DE AGUIAR" value="string:4306379">DILERMANDO DE AGUIAR</option><option label="DOIS IRMÃOS" value="string:4306403">DOIS IRMÃOS</option><option label="DOIS IRMÃOS DAS MISSÕES" value="string:4306429">DOIS IRMÃOS DAS MISSÕES</option><option label="DOIS LAJEADOS" value="string:4306452">DOIS LAJEADOS</option><option label="DOM FELICIANO" value="string:4306502">DOM FELICIANO</option><option label="DOM PEDRO DE ALCÂNTARA" value="string:4306551">DOM PEDRO DE ALCÂNTARA</option><option label="DOM PEDRITO" value="string:4306601">DOM PEDRITO</option><option label="DONA FRANCISCA" value="string:4306700">DONA FRANCISCA</option><option label="DOUTOR MAURÍCIO CARDOSO" value="string:4306734">DOUTOR MAURÍCIO CARDOSO</option><option label="DOUTOR RICARDO" value="string:4306759">DOUTOR RICARDO</option><option label="ELDORADO DO SUL" value="string:4306767">ELDORADO DO SUL</option><option label="ENCANTADO" value="string:4306809">ENCANTADO</option><option label="ENCRUZILHADA DO SUL" value="string:4306908">ENCRUZILHADA DO SUL</option><option label="ENGENHO VELHO" value="string:4306924">ENGENHO VELHO</option><option label="ENTRE-IJUÍS" value="string:4306932">ENTRE-IJUÍS</option><option label="ENTRE RIOS DO SUL" value="string:4306957">ENTRE RIOS DO SUL</option><option label="EREBANGO" value="string:4306973">EREBANGO</option><option label="ERECHIM" value="string:4307005">ERECHIM</option><option label="ERNESTINA" value="string:4307054">ERNESTINA</option><option label="HERVAL" value="string:4307104">HERVAL</option><option label="ERVAL GRANDE" value="string:4307203">ERVAL GRANDE</option><option label="ERVAL SECO" value="string:4307302">ERVAL SECO</option><option label="ESMERALDA" value="string:4307401">ESMERALDA</option><option label="ESPERANÇA DO SUL" value="string:4307450">ESPERANÇA DO SUL</option><option label="ESPUMOSO" value="string:4307500">ESPUMOSO</option><option label="ESTAÇÃO" value="string:4307559">ESTAÇÃO</option><option label="ESTÂNCIA VELHA" value="string:4307609">ESTÂNCIA VELHA</option><option label="ESTEIO" value="string:4307708">ESTEIO</option><option label="ESTRELA" value="string:4307807">ESTRELA</option><option label="ESTRELA VELHA" value="string:4307815">ESTRELA VELHA</option><option label="EUGÊNIO DE CASTRO" value="string:4307831">EUGÊNIO DE CASTRO</option><option label="FAGUNDES VARELA" value="string:4307864">FAGUNDES VARELA</option><option label="FARROUPILHA" value="string:4307906">FARROUPILHA</option><option label="FAXINAL DO SOTURNO" value="string:4308003">FAXINAL DO SOTURNO</option><option label="FAXINALZINHO" value="string:4308052">FAXINALZINHO</option><option label="FAZENDA VILANOVA" value="string:4308078">FAZENDA VILANOVA</option><option label="FELIZ" value="string:4308102">FELIZ</option><option label="FLORES DA CUNHA" value="string:4308201">FLORES DA CUNHA</option><option label="FLORIANO PEIXOTO" value="string:4308250">FLORIANO PEIXOTO</option><option label="FONTOURA XAVIER" value="string:4308300">FONTOURA XAVIER</option><option label="FORMIGUEIRO" value="string:4308409">FORMIGUEIRO</option><option label="FORQUETINHA" value="string:4308433">FORQUETINHA</option><option label="FORTALEZA DOS VALOS" value="string:4308458">FORTALEZA DOS VALOS</option><option label="FREDERICO WESTPHALEN" value="string:4308508">FREDERICO WESTPHALEN</option><option label="GARIBALDI" value="string:4308607">GARIBALDI</option><option label="GARRUCHOS" value="string:4308656">GARRUCHOS</option><option label="GAURAMA" value="string:4308706">GAURAMA</option><option label="GENERAL CÂMARA" value="string:4308805">GENERAL CÂMARA</option><option label="GENTIL" value="string:4308854">GENTIL</option><option label="GETÚLIO VARGAS" value="string:4308904">GETÚLIO VARGAS</option><option label="GIRUÁ" value="string:4309001">GIRUÁ</option><option label="GLORINHA" value="string:4309050">GLORINHA</option><option label="GRAMADO" value="string:4309100">GRAMADO</option><option label="GRAMADO DOS LOUREIROS" value="string:4309126">GRAMADO DOS LOUREIROS</option><option label="GRAMADO XAVIER" value="string:4309159">GRAMADO XAVIER</option><option label="GRAVATAÍ" value="string:4309209">GRAVATAÍ</option><option label="GUABIJU" value="string:4309258">GUABIJU</option><option label="GUAÍBA" value="string:4309308">GUAÍBA</option><option label="GUAPORÉ" value="string:4309407">GUAPORÉ</option><option label="GUARANI DAS MISSÕES" value="string:4309506">GUARANI DAS MISSÕES</option><option label="HARMONIA" value="string:4309555">HARMONIA</option><option label="HERVEIRAS" value="string:4309571">HERVEIRAS</option><option label="HORIZONTINA" value="string:4309605">HORIZONTINA</option><option label="HULHA NEGRA" value="string:4309654">HULHA NEGRA</option><option label="HUMAITÁ" value="string:4309704">HUMAITÁ</option><option label="IBARAMA" value="string:4309753">IBARAMA</option><option label="IBIAÇÁ" value="string:4309803">IBIAÇÁ</option><option label="IBIRAIARAS" value="string:4309902">IBIRAIARAS</option><option label="IBIRAPUITÃ" value="string:4309951">IBIRAPUITÃ</option><option label="IBIRUBÁ" value="string:4310009">IBIRUBÁ</option><option label="IGREJINHA" value="string:4310108">IGREJINHA</option><option label="IJUÍ" value="string:4310207">IJUÍ</option><option label="ILÓPOLIS" value="string:4310306">ILÓPOLIS</option><option label="IMBÉ" value="string:4310330">IMBÉ</option><option label="IMIGRANTE" value="string:4310363">IMIGRANTE</option><option label="INDEPENDÊNCIA" value="string:4310405">INDEPENDÊNCIA</option><option label="INHACORÁ" value="string:4310413">INHACORÁ</option><option label="IPÊ" value="string:4310439">IPÊ</option><option label="IPIRANGA DO SUL" value="string:4310462">IPIRANGA DO SUL</option><option label="IRAÍ" value="string:4310504">IRAÍ</option><option label="ITAARA" value="string:4310538">ITAARA</option><option label="ITACURUBI" value="string:4310553">ITACURUBI</option><option label="ITAPUCA" value="string:4310579">ITAPUCA</option><option label="ITAQUI" value="string:4310603">ITAQUI</option><option label="ITATI" value="string:4310652">ITATI</option><option label="ITATIBA DO SUL" value="string:4310702">ITATIBA DO SUL</option><option label="IVORÁ" value="string:4310751">IVORÁ</option><option label="IVOTI" value="string:4310801">IVOTI</option><option label="JABOTICABA" value="string:4310850">JABOTICABA</option><option label="JACUIZINHO" value="string:4310876">JACUIZINHO</option><option label="JACUTINGA" value="string:4310900">JACUTINGA</option><option label="JAGUARÃO" value="string:4311007">JAGUARÃO</option><option label="JAGUARI" value="string:4311106">JAGUARI</option><option label="JAQUIRANA" value="string:4311122">JAQUIRANA</option><option label="JARI" value="string:4311130">JARI</option><option label="JÓIA" value="string:4311155">JÓIA</option><option label="JÚLIO DE CASTILHOS" value="string:4311205">JÚLIO DE CASTILHOS</option><option label="LAGOA BONITA DO SUL" value="string:4311239">LAGOA BONITA DO SUL</option><option label="LAGOÃO" value="string:4311254">LAGOÃO</option><option label="LAGOA DOS TRÊS CANTOS" value="string:4311270">LAGOA DOS TRÊS CANTOS</option><option label="LAGOA VERMELHA" value="string:4311304">LAGOA VERMELHA</option><option label="LAJEADO" value="string:4311403">LAJEADO</option><option label="LAJEADO DO BUGRE" value="string:4311429">LAJEADO DO BUGRE</option><option label="LAVRAS DO SUL" value="string:4311502">LAVRAS DO SUL</option><option label="LIBERATO SALZANO" value="string:4311601">LIBERATO SALZANO</option><option label="LINDOLFO COLLOR" value="string:4311627">LINDOLFO COLLOR</option><option label="LINHA NOVA" value="string:4311643">LINHA NOVA</option><option label="MACHADINHO" value="string:4311700">MACHADINHO</option><option label="MAÇAMBARÁ" value="string:4311718">MAÇAMBARÁ</option><option label="MAMPITUBA" value="string:4311734">MAMPITUBA</option><option label="MANOEL VIANA" value="string:4311759">MANOEL VIANA</option><option label="MAQUINÉ" value="string:4311775">MAQUINÉ</option><option label="MARATÁ" value="string:4311791">MARATÁ</option><option label="MARAU" value="string:4311809">MARAU</option><option label="MARCELINO RAMOS" value="string:4311908">MARCELINO RAMOS</option><option label="MARIANA PIMENTEL" value="string:4311981">MARIANA PIMENTEL</option><option label="MARIANO MORO" value="string:4312005">MARIANO MORO</option><option label="MARQUES DE SOUZA" value="string:4312054">MARQUES DE SOUZA</option><option label="MATA" value="string:4312104">MATA</option><option label="MATO CASTELHANO" value="string:4312138">MATO CASTELHANO</option><option label="MATO LEITÃO" value="string:4312153">MATO LEITÃO</option><option label="MATO QUEIMADO" value="string:4312179">MATO QUEIMADO</option><option label="MAXIMILIANO DE ALMEIDA" value="string:4312203">MAXIMILIANO DE ALMEIDA</option><option label="MINAS DO LEÃO" value="string:4312252">MINAS DO LEÃO</option><option label="MIRAGUAÍ" value="string:4312302">MIRAGUAÍ</option><option label="MONTAURI" value="string:4312351">MONTAURI</option><option label="MONTE ALEGRE DOS CAMPOS" value="string:4312377">MONTE ALEGRE DOS CAMPOS</option><option label="MONTE BELO DO SUL" value="string:4312385">MONTE BELO DO SUL</option><option label="MONTENEGRO" value="string:4312401">MONTENEGRO</option><option label="MORMAÇO" value="string:4312427">MORMAÇO</option><option label="MORRINHOS DO SUL" value="string:4312443">MORRINHOS DO SUL</option><option label="MORRO REDONDO" value="string:4312450">MORRO REDONDO</option><option label="MORRO REUTER" value="string:4312476">MORRO REUTER</option><option label="MOSTARDAS" value="string:4312500">MOSTARDAS</option><option label="MUÇUM" value="string:4312609">MUÇUM</option><option label="MUITOS CAPÕES" value="string:4312617">MUITOS CAPÕES</option><option label="MULITERNO" value="string:4312625">MULITERNO</option><option label="NÃO-ME-TOQUE" value="string:4312658">NÃO-ME-TOQUE</option><option label="NICOLAU VERGUEIRO" value="string:4312674">NICOLAU VERGUEIRO</option><option label="NONOAI" value="string:4312708">NONOAI</option><option label="NOVA ALVORADA" value="string:4312757">NOVA ALVORADA</option><option label="NOVA ARAÇÁ" value="string:4312807">NOVA ARAÇÁ</option><option label="NOVA BASSANO" value="string:4312906">NOVA BASSANO</option><option label="NOVA BOA VISTA" value="string:4312955">NOVA BOA VISTA</option><option label="NOVA BRÉSCIA" value="string:4313003">NOVA BRÉSCIA</option><option label="NOVA CANDELÁRIA" value="string:4313011">NOVA CANDELÁRIA</option><option label="NOVA ESPERANÇA DO SUL" value="string:4313037">NOVA ESPERANÇA DO SUL</option><option label="NOVA HARTZ" value="string:4313060">NOVA HARTZ</option><option label="NOVA PÁDUA" value="string:4313086">NOVA PÁDUA</option><option label="NOVA PALMA" value="string:4313102">NOVA PALMA</option><option label="NOVA PETRÓPOLIS" value="string:4313201">NOVA PETRÓPOLIS</option><option label="NOVA PRATA" value="string:4313300">NOVA PRATA</option><option label="NOVA RAMADA" value="string:4313334">NOVA RAMADA</option><option label="NOVA ROMA DO SUL" value="string:4313359">NOVA ROMA DO SUL</option><option label="NOVA SANTA RITA" value="string:4313375">NOVA SANTA RITA</option><option label="NOVO CABRAIS" value="string:4313391">NOVO CABRAIS</option><option label="NOVO HAMBURGO" value="string:4313409">NOVO HAMBURGO</option><option label="NOVO MACHADO" value="string:4313425">NOVO MACHADO</option><option label="NOVO TIRADENTES" value="string:4313441">NOVO TIRADENTES</option><option label="NOVO XINGU" value="string:4313466">NOVO XINGU</option><option label="NOVO BARREIRO" value="string:4313490">NOVO BARREIRO</option><option label="OSÓRIO" value="string:4313508">OSÓRIO</option><option label="PAIM FILHO" value="string:4313607">PAIM FILHO</option><option label="PALMARES DO SUL" value="string:4313656">PALMARES DO SUL</option><option label="PALMEIRA DAS MISSÕES" value="string:4313706">PALMEIRA DAS MISSÕES</option><option label="PALMITINHO" value="string:4313805">PALMITINHO</option><option label="PANAMBI" value="string:4313904">PANAMBI</option><option label="PANTANO GRANDE" value="string:4313953">PANTANO GRANDE</option><option label="PARAÍ" value="string:4314001">PARAÍ</option><option label="PARAÍSO DO SUL" value="string:4314027">PARAÍSO DO SUL</option><option label="PARECI NOVO" value="string:4314035">PARECI NOVO</option><option label="PAROBÉ" value="string:4314050">PAROBÉ</option><option label="PASSA SETE" value="string:4314068">PASSA SETE</option><option label="PASSO DO SOBRADO" value="string:4314076">PASSO DO SOBRADO</option><option label="PASSO FUNDO" value="string:4314100">PASSO FUNDO</option><option label="PAULO BENTO" value="string:4314134">PAULO BENTO</option><option label="PAVERAMA" value="string:4314159">PAVERAMA</option><option label="PEDRAS ALTAS" value="string:4314175">PEDRAS ALTAS</option><option label="PEDRO OSÓRIO" value="string:4314209">PEDRO OSÓRIO</option><option label="PEJUÇARA" value="string:4314308">PEJUÇARA</option><option label="PELOTAS" value="string:4314407">PELOTAS</option><option label="PICADA CAFÉ" value="string:4314423">PICADA CAFÉ</option><option label="PINHAL" value="string:4314456">PINHAL</option><option label="PINHAL DA SERRA" value="string:4314464">PINHAL DA SERRA</option><option label="PINHAL GRANDE" value="string:4314472">PINHAL GRANDE</option><option label="PINHEIRINHO DO VALE" value="string:4314498">PINHEIRINHO DO VALE</option><option label="PINHEIRO MACHADO" value="string:4314506">PINHEIRO MACHADO</option><option label="PINTO BANDEIRA" value="string:4314548">PINTO BANDEIRA</option><option label="PIRAPÓ" value="string:4314555">PIRAPÓ</option><option label="PIRATINI" value="string:4314605">PIRATINI</option><option label="PLANALTO" value="string:4314704">PLANALTO</option><option label="POÇO DAS ANTAS" value="string:4314753">POÇO DAS ANTAS</option><option label="PONTÃO" value="string:4314779">PONTÃO</option><option label="PONTE PRETA" value="string:4314787">PONTE PRETA</option><option label="PORTÃO" value="string:4314803">PORTÃO</option><option label="PORTO ALEGRE" value="string:4314902" selected="selected">PORTO ALEGRE</option><option label="PORTO LUCENA" value="string:4315008">PORTO LUCENA</option><option label="PORTO MAUÁ" value="string:4315057">PORTO MAUÁ</option><option label="PORTO VERA CRUZ" value="string:4315073">PORTO VERA CRUZ</option><option label="PORTO XAVIER" value="string:4315107">PORTO XAVIER</option><option label="POUSO NOVO" value="string:4315131">POUSO NOVO</option><option label="PRESIDENTE LUCENA" value="string:4315149">PRESIDENTE LUCENA</option><option label="PROGRESSO" value="string:4315156">PROGRESSO</option><option label="PROTÁSIO ALVES" value="string:4315172">PROTÁSIO ALVES</option><option label="PUTINGA" value="string:4315206">PUTINGA</option><option label="QUARAÍ" value="string:4315305">QUARAÍ</option><option label="QUATRO IRMÃOS" value="string:4315313">QUATRO IRMÃOS</option><option label="QUEVEDOS" value="string:4315321">QUEVEDOS</option><option label="QUINZE DE NOVEMBRO" value="string:4315354">QUINZE DE NOVEMBRO</option><option label="REDENTORA" value="string:4315404">REDENTORA</option><option label="RELVADO" value="string:4315453">RELVADO</option><option label="RESTINGA SÊCA" value="string:4315503">RESTINGA SÊCA</option><option label="RIO DOS ÍNDIOS" value="string:4315552">RIO DOS ÍNDIOS</option><option label="RIO GRANDE" value="string:4315602">RIO GRANDE</option><option label="RIO PARDO" value="string:4315701">RIO PARDO</option><option label="RIOZINHO" value="string:4315750">RIOZINHO</option><option label="ROCA SALES" value="string:4315800">ROCA SALES</option><option label="RODEIO BONITO" value="string:4315909">RODEIO BONITO</option><option label="ROLADOR" value="string:4315958">ROLADOR</option><option label="ROLANTE" value="string:4316006">ROLANTE</option><option label="RONDA ALTA" value="string:4316105">RONDA ALTA</option><option label="RONDINHA" value="string:4316204">RONDINHA</option><option label="ROQUE GONZALES" value="string:4316303">ROQUE GONZALES</option><option label="ROSÁRIO DO SUL" value="string:4316402">ROSÁRIO DO SUL</option><option label="SAGRADA FAMÍLIA" value="string:4316428">SAGRADA FAMÍLIA</option><option label="SALDANHA MARINHO" value="string:4316436">SALDANHA MARINHO</option><option label="SALTO DO JACUÍ" value="string:4316451">SALTO DO JACUÍ</option><option label="SALVADOR DAS MISSÕES" value="string:4316477">SALVADOR DAS MISSÕES</option><option label="SALVADOR DO SUL" value="string:4316501">SALVADOR DO SUL</option><option label="SANANDUVA" value="string:4316600">SANANDUVA</option><option label="SANTA BÁRBARA DO SUL" value="string:4316709">SANTA BÁRBARA DO SUL</option><option label="SANTA CECÍLIA DO SUL" value="string:4316733">SANTA CECÍLIA DO SUL</option><option label="SANTA CLARA DO SUL" value="string:4316758">SANTA CLARA DO SUL</option><option label="SANTA CRUZ DO SUL" value="string:4316808">SANTA CRUZ DO SUL</option><option label="SANTA MARIA" value="string:4316907">SANTA MARIA</option><option label="SANTA MARIA DO HERVAL" value="string:4316956">SANTA MARIA DO HERVAL</option><option label="SANTA MARGARIDA DO SUL" value="string:4316972">SANTA MARGARIDA DO SUL</option><option label="SANTANA DA BOA VISTA" value="string:4317004">SANTANA DA BOA VISTA</option><option label="SANTANA DO LIVRAMENTO" value="string:4317103">SANTANA DO LIVRAMENTO</option><option label="SANTA ROSA" value="string:4317202">SANTA ROSA</option><option label="SANTA TEREZA" value="string:4317251">SANTA TEREZA</option><option label="SANTA VITÓRIA DO PALMAR" value="string:4317301">SANTA VITÓRIA DO PALMAR</option><option label="SANTIAGO" value="string:4317400">SANTIAGO</option><option label="SANTO ÂNGELO" value="string:4317509">SANTO ÂNGELO</option><option label="SANTO ANTÔNIO DO PALMA" value="string:4317558">SANTO ANTÔNIO DO PALMA</option><option label="SANTO ANTÔNIO DA PATRULHA" value="string:4317608">SANTO ANTÔNIO DA PATRULHA</option><option label="SANTO ANTÔNIO DAS MISSÕES" value="string:4317707">SANTO ANTÔNIO DAS MISSÕES</option><option label="SANTO ANTÔNIO DO PLANALTO" value="string:4317756">SANTO ANTÔNIO DO PLANALTO</option><option label="SANTO AUGUSTO" value="string:4317806">SANTO AUGUSTO</option><option label="SANTO CRISTO" value="string:4317905">SANTO CRISTO</option><option label="SANTO EXPEDITO DO SUL" value="string:4317954">SANTO EXPEDITO DO SUL</option><option label="SÃO BORJA" value="string:4318002">SÃO BORJA</option><option label="SÃO DOMINGOS DO SUL" value="string:4318051">SÃO DOMINGOS DO SUL</option><option label="SÃO FRANCISCO DE ASSIS" value="string:4318101">SÃO FRANCISCO DE ASSIS</option><option label="SÃO FRANCISCO DE PAULA" value="string:4318200">SÃO FRANCISCO DE PAULA</option><option label="SÃO GABRIEL" value="string:4318309">SÃO GABRIEL</option><option label="SÃO JERÔNIMO" value="string:4318408">SÃO JERÔNIMO</option><option label="SÃO JOÃO DA URTIGA" value="string:4318424">SÃO JOÃO DA URTIGA</option><option label="SÃO JOÃO DO POLÊSINE" value="string:4318432">SÃO JOÃO DO POLÊSINE</option><option label="SÃO JORGE" value="string:4318440">SÃO JORGE</option><option label="SÃO JOSÉ DAS MISSÕES" value="string:4318457">SÃO JOSÉ DAS MISSÕES</option><option label="SÃO JOSÉ DO HERVAL" value="string:4318465">SÃO JOSÉ DO HERVAL</option><option label="SÃO JOSÉ DO HORTÊNCIO" value="string:4318481">SÃO JOSÉ DO HORTÊNCIO</option><option label="SÃO JOSÉ DO INHACORÁ" value="string:4318499">SÃO JOSÉ DO INHACORÁ</option><option label="SÃO JOSÉ DO NORTE" value="string:4318507">SÃO JOSÉ DO NORTE</option><option label="SÃO JOSÉ DO OURO" value="string:4318606">SÃO JOSÉ DO OURO</option><option label="SÃO JOSÉ DO SUL" value="string:4318614">SÃO JOSÉ DO SUL</option><option label="SÃO JOSÉ DOS AUSENTES" value="string:4318622">SÃO JOSÉ DOS AUSENTES</option><option label="SÃO LEOPOLDO" value="string:4318705">SÃO LEOPOLDO</option><option label="SÃO LOURENÇO DO SUL" value="string:4318804">SÃO LOURENÇO DO SUL</option><option label="SÃO LUIZ GONZAGA" value="string:4318903">SÃO LUIZ GONZAGA</option><option label="SÃO MARCOS" value="string:4319000">SÃO MARCOS</option><option label="SÃO MARTINHO" value="string:4319109">SÃO MARTINHO</option><option label="SÃO MARTINHO DA SERRA" value="string:4319125">SÃO MARTINHO DA SERRA</option><option label="SÃO MIGUEL DAS MISSÕES" value="string:4319158">SÃO MIGUEL DAS MISSÕES</option><option label="SÃO NICOLAU" value="string:4319208">SÃO NICOLAU</option><option label="SÃO PAULO DAS MISSÕES" value="string:4319307">SÃO PAULO DAS MISSÕES</option><option label="SÃO PEDRO DA SERRA" value="string:4319356">SÃO PEDRO DA SERRA</option><option label="SÃO PEDRO DAS MISSÕES" value="string:4319364">SÃO PEDRO DAS MISSÕES</option><option label="SÃO PEDRO DO BUTIÁ" value="string:4319372">SÃO PEDRO DO BUTIÁ</option><option label="SÃO PEDRO DO SUL" value="string:4319406">SÃO PEDRO DO SUL</option><option label="SÃO SEBASTIÃO DO CAÍ" value="string:4319505">SÃO SEBASTIÃO DO CAÍ</option><option label="SÃO SEPÉ" value="string:4319604">SÃO SEPÉ</option><option label="SÃO VALENTIM" value="string:4319703">SÃO VALENTIM</option><option label="SÃO VALENTIM DO SUL" value="string:4319711">SÃO VALENTIM DO SUL</option><option label="SÃO VALÉRIO DO SUL" value="string:4319737">SÃO VALÉRIO DO SUL</option><option label="SÃO VENDELINO" value="string:4319752">SÃO VENDELINO</option><option label="SÃO VICENTE DO SUL" value="string:4319802">SÃO VICENTE DO SUL</option><option label="SAPIRANGA" value="string:4319901">SAPIRANGA</option><option label="SAPUCAIA DO SUL" value="string:4320008">SAPUCAIA DO SUL</option><option label="SARANDI" value="string:4320107">SARANDI</option><option label="SEBERI" value="string:4320206">SEBERI</option><option label="SEDE NOVA" value="string:4320230">SEDE NOVA</option><option label="SEGREDO" value="string:4320263">SEGREDO</option><option label="SELBACH" value="string:4320305">SELBACH</option><option label="SENADOR SALGADO FILHO" value="string:4320321">SENADOR SALGADO FILHO</option><option label="SENTINELA DO SUL" value="string:4320354">SENTINELA DO SUL</option><option label="SERAFINA CORRÊA" value="string:4320404">SERAFINA CORRÊA</option><option label="SÉRIO" value="string:4320453">SÉRIO</option><option label="SERTÃO" value="string:4320503">SERTÃO</option><option label="SERTÃO SANTANA" value="string:4320552">SERTÃO SANTANA</option><option label="SETE DE SETEMBRO" value="string:4320578">SETE DE SETEMBRO</option><option label="SEVERIANO DE ALMEIDA" value="string:4320602">SEVERIANO DE ALMEIDA</option><option label="SILVEIRA MARTINS" value="string:4320651">SILVEIRA MARTINS</option><option label="SINIMBU" value="string:4320677">SINIMBU</option><option label="SOBRADINHO" value="string:4320701">SOBRADINHO</option><option label="SOLEDADE" value="string:4320800">SOLEDADE</option><option label="TABAÍ" value="string:4320859">TABAÍ</option><option label="TAPEJARA" value="string:4320909">TAPEJARA</option><option label="TAPERA" value="string:4321006">TAPERA</option><option label="TAPES" value="string:4321105">TAPES</option><option label="TAQUARA" value="string:4321204">TAQUARA</option><option label="TAQUARI" value="string:4321303">TAQUARI</option><option label="TAQUARUÇU DO SUL" value="string:4321329">TAQUARUÇU DO SUL</option><option label="TAVARES" value="string:4321352">TAVARES</option><option label="TENENTE PORTELA" value="string:4321402">TENENTE PORTELA</option><option label="TERRA DE AREIA" value="string:4321436">TERRA DE AREIA</option><option label="TEUTÔNIA" value="string:4321451">TEUTÔNIA</option><option label="TIO HUGO" value="string:4321469">TIO HUGO</option><option label="TIRADENTES DO SUL" value="string:4321477">TIRADENTES DO SUL</option><option label="TOROPI" value="string:4321493">TOROPI</option><option label="TORRES" value="string:4321501">TORRES</option><option label="TRAMANDAÍ" value="string:4321600">TRAMANDAÍ</option><option label="TRAVESSEIRO" value="string:4321626">TRAVESSEIRO</option><option label="TRÊS ARROIOS" value="string:4321634">TRÊS ARROIOS</option><option label="TRÊS CACHOEIRAS" value="string:4321667">TRÊS CACHOEIRAS</option><option label="TRÊS COROAS" value="string:4321709">TRÊS COROAS</option><option label="TRÊS DE MAIO" value="string:4321808">TRÊS DE MAIO</option><option label="TRÊS FORQUILHAS" value="string:4321832">TRÊS FORQUILHAS</option><option label="TRÊS PALMEIRAS" value="string:4321857">TRÊS PALMEIRAS</option><option label="TRÊS PASSOS" value="string:4321907">TRÊS PASSOS</option><option label="TRINDADE DO SUL" value="string:4321956">TRINDADE DO SUL</option><option label="TRIUNFO" value="string:4322004">TRIUNFO</option><option label="TUCUNDUVA" value="string:4322103">TUCUNDUVA</option><option label="TUNAS" value="string:4322152">TUNAS</option><option label="TUPANCI DO SUL" value="string:4322186">TUPANCI DO SUL</option><option label="TUPANCIRETÃ" value="string:4322202">TUPANCIRETÃ</option><option label="TUPANDI" value="string:4322251">TUPANDI</option><option label="TUPARENDI" value="string:4322301">TUPARENDI</option><option label="TURUÇU" value="string:4322327">TURUÇU</option><option label="UBIRETAMA" value="string:4322343">UBIRETAMA</option><option label="UNIÃO DA SERRA" value="string:4322350">UNIÃO DA SERRA</option><option label="UNISTALDA" value="string:4322376">UNISTALDA</option><option label="URUGUAIANA" value="string:4322400">URUGUAIANA</option><option label="VACARIA" value="string:4322509">VACARIA</option><option label="VALE VERDE" value="string:4322525">VALE VERDE</option><option label="VALE DO SOL" value="string:4322533">VALE DO SOL</option><option label="VALE REAL" value="string:4322541">VALE REAL</option><option label="VANINI" value="string:4322558">VANINI</option><option label="VENÂNCIO AIRES" value="string:4322608">VENÂNCIO AIRES</option><option label="VERA CRUZ" value="string:4322707">VERA CRUZ</option><option label="VERANÓPOLIS" value="string:4322806">VERANÓPOLIS</option><option label="VESPASIANO CORRÊA" value="string:4322855">VESPASIANO CORRÊA</option><option label="VIADUTOS" value="string:4322905">VIADUTOS</option><option label="VIAMÃO" value="string:4323002">VIAMÃO</option><option label="VICENTE DUTRA" value="string:4323101">VICENTE DUTRA</option><option label="VICTOR GRAEFF" value="string:4323200">VICTOR GRAEFF</option><option label="VILA FLORES" value="string:4323309">VILA FLORES</option><option label="VILA LÂNGARO" value="string:4323358">VILA LÂNGARO</option><option label="VILA MARIA" value="string:4323408">VILA MARIA</option><option label="VILA NOVA DO SUL" value="string:4323457">VILA NOVA DO SUL</option><option label="VISTA ALEGRE" value="string:4323507">VISTA ALEGRE</option><option label="VISTA ALEGRE DO PRATA" value="string:4323606">VISTA ALEGRE DO PRATA</option><option label="VISTA GAÚCHA" value="string:4323705">VISTA GAÚCHA</option><option label="VITÓRIA DAS MISSÕES" value="string:4323754">VITÓRIA DAS MISSÕES</option><option label="WESTFÁLIA" value="string:4323770">WESTFÁLIA</option><option label="XANGRI-LÁ" value="string:4323804">XANGRI-LÁ</option></select>
+                          </div>
+                          <div class="col-12">
+                            <button  type="submit" class="btn btn-outline-primary" data-bs-target="tab-pane fade">Próximo</button>
+                            <button  type="submit" class="btn btn-primary mx-2"><i class="bi bi-arrow-left-short"></i> Voltar</button>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" ><i class="bi bi-question-circle" ></i> Duvidas?</button>
+                              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                  <h5 class="offcanvas-title" id="offcanvasRightLabel">Ficou com duvidas?</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                  <div class="card card-demo">
+                                    <div class="card-body">
+                                      Com o íconeA cv <i class="bi bi-question-square" style="color: #fd7e14;"></i> em cada campo você consegue verificar qual norma está por trás ou para oque ele e devido, indicamos uma consulta mais técnica sobre tributações e regras de negócio com seu contador.                                      
+                                      <div>
+                                        <label class="py-2  ">Exemplo:</label>
+                                        <img src="assets/img/demo2.png" alt="" class="img-fluid demo-2">
+                                      </div>
+                                    </div>
+                                  </div>
+                              
+                                  
+                                  <h5 class="py-3">Alguma duvida sobre o sistema?</h5>
+                                  <div class="card card-demo">
+                                    <div class="card-body">
+                                      <span><strong>Fale com o Suporte</strong></span><br>
+                                      <span>De segunda à sexta-feira, das 7h às 19h.<br>Sábado das 8h às 12h. </span><br>
+                                      <a href="https://safeweb.com.br/suporte/falecomosuporte" type="btn" class="btn btn-primary ">Saber Mais</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                            </div>
+                            
+                          </div>
+                        </form>
+                      </div>
+
+                      <div class="tab-pane fade" id="nav-Notas-Fiscais" role="tabpanel" aria-labelledby="nav-Notas-Fiscais" tabindex="0">
+                        <di>
+                          <h5><i class="bi bi-dash"></i> Notas Fiscais Referenciadas</h5>
+                          <hr class="py-1">
+                        </di>
+                        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Nota Referenciada</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                                <div class="modal-body">
+                                    <div class="row mx-2 " >
+                                    <div class="form-check ">
+                                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                      <label class="form-check-label" for="flexRadioDefault1">
+                                        Nota Fiscal Eletrônica (NF-e)
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                      <label class="form-check-label" for="flexRadioDefault2">
+                                        Nota Fiscal
+                                      </label>
+                                    </div>
+                                    <div class="form-check ">
+                                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                      <label class="form-check-label" for="flexRadioDefault3">
+                                        Cupom Fiscal
+                                      </label>
+                                    </div>
+                                    <div class="form-check ">
+                                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                      <label class="form-check-label" for="flexRadioDefault4">
+                                        Conhecimento de Transporte Eletrônico (CT-e)
+                                      </label>
+                                    </div>
+                                    <div class="form-check ">
+                                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                      <label class="form-check-label" for="flexRadioDefault5">
+                                        Nota Fiscal de Produtor
+                                      </label>
+                                    </div>
+                                </div>
+
+                                <hr class="py-1">
+                                <form>
+                                  <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label"><span style="color: red;">*</span>  Chave de Acesso</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                                    <div id="emailHelp" class="form-text">Referêncie sua nota fiscal.</div>
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Salvar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <button class="btn btn-outline-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"> <i class="bi bi-plus-circle"></i> Incluir</button>
+                      </div>
+
+                      <div class="tab-pane fade" id="nav-Autorização" role="tabpanel" aria-labelledby="nav-Autorização" tabindex="0">
+                        <h5><i class="bi bi-dash"></i> Autorização de Download</h5>
+                        <hr class="py-1 ">
+                        <div class="card w-75 mb-3">
+                          <div class="card-body">
+                            <p class="card-text" style="color:#a94442;">Esse grupo de informações permite que a empresa emitente possa indicar outras pessoas autorizadas a obter o download do arquivo XML do documento eletrônico. Nesta alternativa, a empresa emitente poderá indicar o seu contador, outras pessoas envolvidas no transporte da mercadoria, etc.</p>
+                          </div>
+                        </div>
+                        <form>
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">CNPJ/CPF do autorizado</label>
+                            <input type="email" class="form-control w-75" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          </div>
+                          <button class="btn btn-outline-primary" > <i class="bi bi-plus-circle"></i> Incluir</button>
+                        </form>
+                      </div>
+                      <div class="tab-pane fade" id="nav-Dados" role="tabpanel" aria-labelledby="nav-Dados" tabindex="0">
+                        <h5><i class="bi bi-dash"></i> Emissão da NFe </h5>
+                        <hr class="py-1 ">
+                        <div>
+                          <form class="row">
+                            <div class="col-6" >
+                              <label for="disabledTextInput" class="form-label">Valor resumido</label>
+                              <input type="text" id="disabledTextInput" class="form-control"  placeholder="Valor resumido"disabled>
+                            </div>
+                            <div class="col-6" >
+                              <label for="disabledTextInput" class="form-label">Valor Total da NF-e</label>
+                              <input type="text" id="disabledTextInput" class="form-control" placeholder="Valor Total da NF-e"disabled >
+                            </div>
+                            <div class=" py-2 col-12" >
+                              <label for="disabledTextInput" class="form-label">Valor ICMS da NF-e</label>
+                              <input type="text" id="disabledTextInput" class="form-control" placeholder="Valor ICMS da NF-e" disabled>
+                            </div>
+                            <div class="col-6" >
+                              <label for="disabledTextInput" class="form-label">Número do Protocolo</label>
+                              <input type="text" id="disabledTextInput" class="form-control"placeholder="Número do Protocolo"   disabled>
+                            </div>
+                            <div class="col-6" >
+                              <label for="disabledTextInput" class="form-label">Dados do Protocolo</label>
+                              <input type="text" id="disabledTextInput" placeholder="Dados do Protocolo" class="form-control"disabled >
+                            </div>
+
+                          </form>
+                          
+                        </div>
+                        
+                </div>
+            <div class="tab-pane fade main-nota" id="pills-emitente" role="tabpanel" aria-labelledby="pills-emitente" tabindex="0">
+              <div>
+
+              </div>
+
+            <div>
+              <div class="tab-pane fade" id="pills-produtos" role="tabpanel" aria-labelledby="pills-produtos" tabindex="0">TESTE3</div>
+              <div class="tab-pane fade" id="pills-totais" role="tabpanel" aria-labelledby="pills-totais" tabindex="1">TESTE4</div>
+              <div class="tab-pane fade" id="pills-pagamento" role="tabpanel" aria-labelledby="pills-pagamento" tabindex="2">TESTE5</div>
+              <div class="tab-pane fade" id="pills-trasnporte" role="tabpanel" aria-labelledby="pills-trasnporte" tabindex="0">TESTE6</div>
+              <div class="tab-pane fade" id="pills-entrega" role="tabpanel" aria-labelledby="pills-entrega" tabindex="0">TESTE7</div>
+              <div class="tab-pane fade" id="pills-cobranca" role="tabpanel" aria-labelledby="pills-cobranca" tabindex="0">TESTE8</div>
+              <div class="tab-pane fade" id="pills-info" role="tabpanel" aria-labelledby="pills-info" tabindex="0">TESTE9</div>
+              <div class="tab-pane fade" id="pills-compra" role="tabpanel" aria-labelledby="pills-compra" tabindex="0">TESTE10</div>
+           </div>
+
+          <!-- Modais -->
+           
+            
+            <div></div>
+      </section >
+      
+      <!-- FOOTER-->
+      <footer id="sticky-footer" class="flex-shrink-0 py-4  text-white-50">
+        <div class="container text-center">
+          <small style="color: black;"><strong>Safeweb Segurança da Informação Ltda </strong> - CNPJ: 01.579.286/0001-74 - Av. Princesa Isabel, 828 - Porto Alegre/RS - 90620-000 © Copyright 2023</small>
+        </div>
+      </footer>
+       
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  
+  </body>
+</html>
